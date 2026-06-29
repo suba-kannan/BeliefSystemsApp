@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "BeliefSystems Academy",
+    "slug": "BeliefSystemsApp",
+    "owner": "suba_lakshmi14",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.beliefsystems.academy"
+    },
+    "android": {
+      "package": "com.beliefsystems.academy",
+      "versionCode": 2,
+      "usesCleartextTraffic": true,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundColor": "#E6F4FE"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "e8b9e690-af3d-4417-9083-4ce566c55a61"
+      }
+    }
+  }
+}
