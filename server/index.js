@@ -9,16 +9,16 @@ connectDB()
 
 const app = express()
 
-app.use(cors())
+app.use(cors({ origin: '*' }))
 app.use(express.json())
+
+// Health check
+app.get('/api', (req, res) => res.json({ status: 'BeliefSystems API running ✅' }))
 
 app.use('/api/users', userRoutes)
 
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 5000
 
-app.listen(PORT,()=>{
-    console.log(`Server successfully connected on http://localhost:${PORT}`);
-    
-})
-
-//http://localhost:5000/api/users
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Server running on port ${PORT}`)
+})
